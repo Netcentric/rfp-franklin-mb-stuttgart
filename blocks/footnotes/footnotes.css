@@ -1,0 +1,11 @@
+.footnotes {
+  color: #696969;
+  font-size: 12px;
+}
+
+.hero .footnotes,
+.highlight .footnotes {
+  color: #9f9f9f;
+  font-size: 12px;
+}
+
