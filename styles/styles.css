@@ -53,6 +53,22 @@
   }
 }
 
+@font-face {
+    font-display: swap;
+    font-family: "MBCorpo Title";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/MBCorpoATitleCond-Regular-Web.woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "MBCorpo Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MBCorpoSText-Regular-Web.woff2');
+}
+
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
