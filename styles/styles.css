@@ -17,7 +17,8 @@
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #000;
-  --highlight-text-color: #fff;
+  --highlight-text-color: #bbb;
+  --highlight-title-color: #fff;
   --text-color: #000;
 
   /* fonts */
@@ -266,4 +267,8 @@ main .section {
 main .section.highlight {
   background-color: var(--highlight-background-color);
   color: var(--highlight-text-color);
+
+  & :where(h1, h2, h3, h4, h5, h6) {
+    color: var(--highlight-title-color);
+  }
 }
