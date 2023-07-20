@@ -146,28 +146,40 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
-  display: inline-block;
+  unicode-bidi: isolate;
   box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
-  text-align: center;
+  border-radius: 2px;
+  font: inherit;
+  font-family: var("MBCorpo Text","DaimlerCS-Regular","DaimlerCSArab-Regular",sans-serif;);
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: .025em;
+  line-height: 1.5rem;
+  background-color: #0078d6;
+  border: 1px solid #0078d6;
+  color: var(--wb-white);
+  min-width: 144px;
+  outline: none;
+  align-items: center;
+  appearance: none;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 11px 23px;
+  outline-offset: 0;
+  overflow: visible;
+  text-transform: none;
+  width: fit-content;
+  margin-top: 2rem;
+  display: inline-flex;
+  border-color: #0078d6;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
+  background-color: #014880;
+  transition: background-color .3s ease-in-out;
 }
 
 button:disabled, button:disabled:hover {
@@ -176,9 +188,17 @@ button:disabled, button:disabled:hover {
 }
 
 a.button.secondary, button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color)
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #036dc1;
+}
+
+a.button.secondary:hover, a.button.secondary:focus, button.secondary:hover, button.secondary:focus  {
+  /* stylelint-disable-next-line color-function-notation */
+  background-color: rgba(0, 0, 0, 8%);
+  transition: background-color .3s ease-in-out;
 }
 
 main input {
