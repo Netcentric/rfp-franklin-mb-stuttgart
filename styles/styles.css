@@ -16,7 +16,8 @@
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #000;
+  --highlight-text-color: #fff;
   --text-color: #000;
 
   /* fonts */
@@ -65,10 +66,6 @@ body {
 
 body.appear {
   display: unset;
-}
-
-header {
-  height: var(--nav-height);
 }
 
 h1, h2, h3,
@@ -240,4 +237,5 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+  color: var(--highlight-text-color);
 }
