@@ -21,8 +21,8 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: 'MBCorpo Text', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: 'MBCorpo Title';
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -150,7 +150,6 @@ a.button:any-link, button {
   box-sizing: border-box;
   border-radius: 2px;
   font: inherit;
-  font-family: var("MBCorpo Text","DaimlerCS-Regular","DaimlerCSArab-Regular",sans-serif;);
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -158,7 +157,7 @@ a.button:any-link, button {
   line-height: 1.5rem;
   background-color: #0078d6;
   border: 1px solid #0078d6;
-  color: var(--wb-white);
+  color: white;
   min-width: 144px;
   outline: none;
   align-items: center;
@@ -174,7 +173,6 @@ a.button:any-link, button {
   width: fit-content;
   margin-top: 2rem;
   display: inline-flex;
-  border-color: #0078d6;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -282,4 +280,22 @@ main .section {
 main .section.highlight {
   background-color: var(--highlight-background-color);
   color: var(--highlight-text-color);
+}
+
+.advantages-wrapper {
+  background: #000;
+}
+
+.advantages h2 {
+  font-family: "MBCorpo Title", serif;
+}
+
+.advantages p {
+  font-family: "MBCorpo Text", serif;
+  font-size: 22px;
+  color: #bbb;
+}
+
+.advantages ul {
+  list-style-type: disc;
 }
