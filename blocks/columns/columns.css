@@ -19,11 +19,26 @@
   display: block;
 }
 
+/* grid spacing for 2-column image block */
+.columns.columns-2-cols > div > div {
+  flex-grow: 45;
+
+  &.columns-img-col {
+    flex-grow: 55;
+  }
+}
+
+/* text column spacing */
+.columns > div > div > :where(h1, h2, h3, h4, h5, h6) {
+  padding-block-start: 1.2rem;
+  padding-block-end: 1.5rem;
+}
+
 @media (min-width: 900px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    gap: 8%;
   }
 
   .columns > div > div {
