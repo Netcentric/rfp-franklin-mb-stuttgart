@@ -287,6 +287,10 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
   color: var(--highlight-text-color);
 
+  & p {
+    color: var(--highlight-text-color);
+  }
+
   & :where(h1, h2, h3, h4, h5, h6) {
     color: var(--highlight-title-color);
   }
