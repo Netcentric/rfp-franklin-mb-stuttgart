@@ -72,6 +72,10 @@
   transition: transform .5s cubic-bezier(.3,0,0,1);
 }
 
+.list .list__content p {
+  margin: 0;
+}
+
 .list a:hover .list__content {
     transform: translateX(var(--contentTransformX));
     transition: transform .5s cubic-bezier(.3,0,0,1) .1s;
