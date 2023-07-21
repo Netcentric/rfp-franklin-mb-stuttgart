@@ -21,7 +21,7 @@
 
 /* grid spacing for 2-column image block */
 .columns.columns-2-cols > div > .columns-img-col {
-  --img-columns-padding-gap: 10%;
+  --img-columns-padding-gap: 6%;
   --img-columns-basis: 20%;
 
   &:first-child {
@@ -32,6 +32,11 @@
     flex-basis: var(--img-columns-basis);
     padding-inline-start: var(--img-columns-padding-gap);
   }
+}
+
+/* text column spacing */
+.columns > div > div > :where(h1, h2, h3, h4, h5, h6) + p {
+  padding-block-start: 1.5rem;
 }
 
 @media (min-width: 900px) {
