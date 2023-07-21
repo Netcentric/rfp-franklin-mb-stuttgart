@@ -18,6 +18,7 @@
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
+  --footer-background-color: #000;
   --highlight-background-color: #000;
   --highlight-text-color: #bbb;
   --highlight-title-color: #fff;
@@ -258,8 +259,6 @@ main img {
 }
 
 main .section {
-  --content-width: 89%;
-
   padding: 64px 16px;
 }
 
@@ -273,7 +272,6 @@ main .section {
   .section > div {
     max-width: 1200px;
     margin: auto;
-    width: var(--content-width);
   }
 }
 
