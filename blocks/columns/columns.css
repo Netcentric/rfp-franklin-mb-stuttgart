@@ -19,6 +19,21 @@
   display: block;
 }
 
+/* grid spacing for 2-column image block */
+.columns.columns-2-cols > div > .columns-img-col {
+  --img-columns-padding-gap: 10%;
+  --img-columns-basis: 20%;
+
+  &:first-child {
+    flex-basis: var(--img-columns-basis);
+    padding-inline-end: var(--img-columns-padding-gap);
+  }
+  &:last-child {
+    flex-basis: var(--img-columns-basis);
+    padding-inline-start: var(--img-columns-padding-gap);
+  }
+}
+
 @media (min-width: 900px) {
   .columns > div {
     align-items: center;
