@@ -258,6 +258,8 @@ main img {
 }
 
 main .section {
+  --content-width: 89%;
+
   padding: 64px 16px;
 }
 
@@ -271,6 +273,7 @@ main .section {
   .section > div {
     max-width: 1200px;
     margin: auto;
+    width: var(--content-width);
   }
 }
 
