@@ -1,7 +1,9 @@
 /* stylelint-disable */
 
-@import url('https://assets.oneweb.mercedes-benz.com/plugin/workbench/core/6.12.1/css/globals.css');
-
+.header p,
+.header ul {
+  margin: 0;
+}
 
 body.scroll-lock,html.scroll-lock{margin:0;overflow:hidden}a:focus,button:focus{outline:none}a:focus-visible,button:focus-visible{outline:1px solid var(--wb-blue-75);outline-offset:5px}
 

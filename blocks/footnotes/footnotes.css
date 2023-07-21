@@ -1,6 +1,11 @@
 .footnotes {
   color: #696969;
   font-size: 12px;
+  margin-top: 3rem;
+}
+
+.footnotes p {
+  margin-bottom: 16px;
 }
 
 .hero .footnotes,
