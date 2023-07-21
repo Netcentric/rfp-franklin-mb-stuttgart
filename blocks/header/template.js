@@ -532,7 +532,7 @@ const template = ({ links = [] } = {}) => `
                 label="Menubar"
                 class="owc-header-main-navigation owc-header-main-navigation__desktop"
               >
-              ${links && links.map(navTemplate).join()}
+              ${links && links.map(navTemplate).join('')}
               </ul>
             </div>
           </nav>
