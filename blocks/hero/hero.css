@@ -25,7 +25,8 @@ main .hero h1 {
   color: white;
   font-family: "MBCorpo Title", serif;
   font-weight: 400;
-  padding-right: 55%;
+  font-size: 64px;
+  padding-right: 51%;
 }
 
 main .hero h5 {
