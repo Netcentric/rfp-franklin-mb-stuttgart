@@ -279,6 +279,7 @@ main .section {
   .section > div {
     max-width: 1680px;
     margin: auto;
+    width: var(--wb-grid-content-width);
   }
 }
 
