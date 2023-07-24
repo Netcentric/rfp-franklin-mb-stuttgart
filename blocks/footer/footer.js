@@ -4,7 +4,7 @@ const arrowTopIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24
 
 function getScrollToTopBlock() {
   const wrapper = document.createElement('div');
-  wrapper.classList.add('scrollToTop__wrapper');
+  wrapper.classList.add('scrollToTop');
 
   const button = document.createElement('button');
   button.addEventListener('click', () => {
