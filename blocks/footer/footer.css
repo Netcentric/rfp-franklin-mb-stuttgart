@@ -12,3 +12,20 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+footer .scrollToTop__wrapper {
+  text-align: center;
+  margin-bottom: 32px;
+
+  & button {
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+  }
+
+  & svg {
+    fill: white;
+    width: 48px;
+  }
+}
