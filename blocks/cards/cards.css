@@ -2,8 +2,8 @@
   --cards-gap: 40px;
 }
 
-.section.cards-container .cards-wrapper:first-child {
-  margin-bottom: var(--cards-gap);
+.section.cards-container .cards-wrapper ~ .cards-wrapper {
+  margin-top: var(--cards-gap);
 }
 
 .cards > ul {
@@ -28,7 +28,7 @@
   .cards > ul {
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     & > li:nth-child(4) {
-      display: unset;
+      display: flex;
     }
   }
 }
