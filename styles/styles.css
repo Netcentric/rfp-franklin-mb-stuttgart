@@ -280,7 +280,7 @@ main .section {
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 64px 0;
   }
 }
 
@@ -295,7 +295,7 @@ main .section {
   .section > div {
     max-width: 1680px;
     margin: auto;
-    width: var(--wb-grid-content-width);
+    width: 86%;
   }
 }
 
