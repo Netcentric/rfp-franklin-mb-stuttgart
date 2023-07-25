@@ -33,6 +33,7 @@ main .hero h1 {
 
 main .hero h5 {
   font-family: "MBCorpo Text", serif;
+  width: 90%;
   font-size: 18px;
   color: #bbb;
   margin: 32px auto 0;
