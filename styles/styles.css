@@ -311,6 +311,10 @@ main .section.highlight {
 }
 
 .section.angebote {
+  & .columns-wrapper {
+    margin-bottom: 32px;
+  }
+
   & .button.secondary {
     color: var(--wb-grey-20, #333);
     border-color: var(--wb-grey-70, #bbb);
