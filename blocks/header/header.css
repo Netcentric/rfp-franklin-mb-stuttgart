@@ -1,5 +1,9 @@
 /* stylelint-disable */
 
+header {
+  min-height: 160px;
+}
+
 .header p,
 .header ul {
   margin: 0;
