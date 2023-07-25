@@ -78,11 +78,6 @@
   & .button {
     width: 100%;
   }
-  & .button.secondary {
-    color: var(--wb-grey-20, #333);
-    border-color: var(--wb-grey-70, #bbb);
-    outline: transparent;
-  }
   & .button-container {
     margin: 8px 0 0;
     & .button {
