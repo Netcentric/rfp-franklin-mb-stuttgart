@@ -20,36 +20,36 @@ footer p {
   footer .footer {
     max-width: 1680px;
     margin: auto;
-    width: var(--wb-grid-content-width);
+    width: 90%;
   }
 }
 
 footer a,
 footer a:any-link {
   box-sizing: border-box;
-  background-repeat: no-repeat,no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-position-x: left;
-  background-size: 0 100%,100% 100%;
+  background-size: 0 100%, 100% 100%;
   padding-bottom: 2px;
-  transition: background-size .42s cubic-bezier(.165,.84,.44,1);
+  transition: background-size 0.42s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-font-smoothing: antialiased;
   font: inherit;
-  font-family: var(--wb-font-text);
+  font-family: "MBCorpo Text", "DaimlerCS-Regular", "DaimlerCSArab-Regular",sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
-  outline-color: var(--wb-blue-45);
-  color: var(--wb-grey-70);
-  background-image: linear-gradient(to top,var(--wb-white) 1px,transparent 1px);
+  outline-color: #0078d6;
+  color: #bbb;
+  background-image: linear-gradient(to top, #fff 1px, transparent 1px);
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 footer a:hover {
-  color: var(--wb-white);
-  background-size: 100% 100%,100% 100%;
+  color: #fff;
+  background-size: 100% 100%, 100% 100%;
 }
 
 footer .footer p {
@@ -77,9 +77,9 @@ footer .scrollToTop {
   display: flex;
   width: 100%;
   justify-content: flex-start;
-  gap: var(--wb-spacing-m);
-  padding: var(--wb-spacing-s) 0;
-  margin: var(--wb-spacing-s) 0;
+  gap: 3rem;
+  padding: 2rem 0;
+  margin: 2rem 0;
 }
 
 .links-list > div > div p {
@@ -91,17 +91,17 @@ footer .scrollToTop {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border-top: 1px solid var(--wb-grey-40);
-  padding: var(--wb-spacing-s) 0;
-  margin: var(--wb-spacing-s) 0;
+  border-top: 1px solid #696969;
+  padding: 2rem 0;
+  margin: 2rem 0;
 }
 
 .footer-links > div > div {
   display: flex;
   justify-content: flex-start;
-  gap: var(--wb-spacing-s);
+  gap: 2rem;
 }
 
 .links-list > div > div:first-child {
-  margin-bottom: var(--wb-spacing-xs);
+  margin-bottom: 1.5rem;
 }
