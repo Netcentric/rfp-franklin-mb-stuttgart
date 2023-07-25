@@ -28,7 +28,7 @@ main .hero h1 {
   font-family: "MBCorpo Title", serif;
   font-weight: 400;
   font-size: 64px;
-  padding-right: 51%;
+  padding-right: 50vw;
 }
 
 main .hero h5 {
@@ -39,6 +39,7 @@ main .hero h5 {
   margin: 32px auto 0;
   max-width: 1680px;
   font-weight: normal;
+  padding-right: 50vw;
 }
 
 main .hero picture {
