@@ -7,7 +7,7 @@ import template from './template.js';
 export default async function decorate(block) {
   block.innerHTML = template();
 
-  const homeLink = { path: '/', title: '5 Jahre Garantie' };
+  const homeLink = { path: '/', title: 'Homepage' };
   const linksPath = '/offers/query-index.json';
   const linksResponse = await fetch(linksPath);
   const linksData = await linksResponse.json();
