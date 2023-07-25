@@ -20,7 +20,6 @@ header {
   position: relative;
   display: flex;
   justify-items: stretch;
-  max-width: 1680px;
   width: 100%;
   height: 96px;
   -webkit-box-align: center;
@@ -181,6 +180,21 @@ header {
   -webkit-box-align: center;
   align-items: center;
   min-height: 56px;
+}
+
+@media (min-width: 48em) {
+  .header .owc-header__top,
+  .header .owc-header-main-navigation {
+    width: 86%;
+    max-width: 1680px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header .owc-header__top,
+  .header .owc-header-main-navigation {
+      width: 100%;
+  }
 }
 
 .header .owc-header-navigation-topic {
