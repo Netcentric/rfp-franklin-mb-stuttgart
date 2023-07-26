@@ -22,13 +22,20 @@ const LCP_BLOCKS = ['hero']; // add your LCP blocks to the list
 function buildHeroBlock(main) {
   const h1 = main.querySelector('h1');
   const h5 = main.querySelector('h5');
+  const heroCTA = main.querySelector('a');
+  const heroCTASecondary = main.querySelector('a[title=Kontakt]');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
     const section = document.createElement('div');
     const pictureGradient = document.createElement('div');
+    const CTAWrapper = document.createElement('div');
+    CTAWrapper.classList.add('CTA-Wrapper');
     pictureGradient.classList.add('picture-gradient');
-    section.append(buildBlock('hero', { elems: [picture, pictureGradient, h1, h5] }));
+    heroCTA.classList.remove('primary');
+    heroCTA.classList.add('secondary');
+    section.append(buildBlock('hero', { elems: [picture, pictureGradient, h1, h5, CTAWrapper, heroCTA, heroCTASecondary] }));
+    CTAWrapper.append(heroCTA, heroCTASecondary);
     main.prepend(section);
   }
 }

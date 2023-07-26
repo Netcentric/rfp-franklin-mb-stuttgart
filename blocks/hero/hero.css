@@ -42,6 +42,23 @@ main .hero h5 {
   padding-right: 50vw;
 }
 
+main .hero .CTA-Wrapper {
+  max-width: 1680px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .hero .secondary {
+  border: 1px solid #696969;
+  margin-right: 8px;
+  color: white;
+
+  &:hover {
+    background-color: hsla(0, 0%, 100%, .16);
+  }
+}
+
 main .hero picture {
   position: absolute;
   z-index: -1;
