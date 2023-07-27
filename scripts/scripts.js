@@ -35,7 +35,12 @@ function buildHeroBlock(main) {
     heroCTA.classList.remove('primary');
     heroCTA.classList.add('secondary');
     section.append(buildBlock('hero', { elems: [picture, pictureGradient, h1, h5, CTAWrapper, heroCTA, heroCTASecondary] }));
-    CTAWrapper.append(heroCTA, heroCTASecondary);
+    if (heroCTA) {
+      CTAWrapper.append(heroCTA);
+    }
+    if (heroCTASecondary) {
+      CTAWrapper.append(heroCTASecondary);
+    }
     main.prepend(section);
   }
 }
