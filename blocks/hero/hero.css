@@ -40,6 +40,10 @@ main .hero h5 {
   max-width: 1680px;
   font-weight: normal;
   padding-right: 50vw;
+
+  & + .CTA-Wrapper {
+    display: none;
+  }
 }
 
 main .hero .CTA-Wrapper {
